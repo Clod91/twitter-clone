@@ -1,0 +1,36 @@
+.message_item {
+  display: flex;
+  border: 1px solid rgb(207, 255, 135);
+  padding: 8px;
+}
+
+.user_img {
+  width: 40px;
+  height: 40px;
+}
+
+.user_message {
+  font-size: 0.8rem;
+  padding: 0 12px;
+}
+
+.username {
+  font-weight: bold;
+  color: greenyellow;
+}
+
+.email {
+  font-size: 0.7rem;
+  color: rgb(195, 247, 118);
+}
+
+.msg_icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.msg_icons img {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
