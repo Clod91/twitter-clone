@@ -1,5 +1,6 @@
 import Content from "./components/content";
 import BottomBar from "./components/bottomBar";
+import Trends from "./components/trends";
 
 import "./App.css";
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Content />
       <BottomBar />
+      <Trends />
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.trends {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .trends {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+  }
+}

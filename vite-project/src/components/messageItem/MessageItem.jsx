@@ -1,3 +1,7 @@
+import { BiMessageRounded } from "react-icons/bi";
+import { BsArrowDownUp, BsUpload } from "react-icons/bs";
+import { AiOutlineHeart } from "react-icons/ai";
+
 import "./index.css";
 
 const MessageItem = ({ messageData }) => {
@@ -11,19 +15,11 @@ const MessageItem = ({ messageData }) => {
         <p>{body}</p>
 
         <div className="msg_icons">
-          <img
-            src="https://img.icons8.com/external-those-icons-lineal-those-icons/256/external-Chat-Bubble-messages-and-chat-those-icons-lineal-those-icons-10.png"
-            alt="chat"
-          />
-          <img
-            src="https://img.icons8.com/external-bearicons-gradient-bearicons/256/external-Repost-social-media-bearicons-gradient-bearicons.png"
-            alt="repost"
-          />
-          <img
-            src="https://img.icons8.com/emoji/256/green-heart.png"
-            alt="heart"
-          />
-          <img src="https://img.icons8.com/ios/256/upload.png" alt="upload" />
+          <BiMessageRounded />
+
+          <BsArrowDownUp />
+          <AiOutlineHeart />
+          <BsUpload />
         </div>
       </div>
     </div>

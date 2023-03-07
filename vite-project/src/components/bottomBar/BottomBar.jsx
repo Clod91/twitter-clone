@@ -1,3 +1,6 @@
+import { RxHome } from "react-icons/rx";
+import { BsSearch, BsBell } from "react-icons/bs";
+import { BiMessageDetail } from "react-icons/bi";
 import "./index.css";
 
 const BottomBar = () => {
@@ -12,19 +15,19 @@ const BottomBar = () => {
           />
         </li>
         <li>
-          <img src="https://img.icons8.com/ios/256/home-page.png" alt="home" />
+          <RxHome className="bottom_icon" />
           <p>home</p>
         </li>
         <li>
-          <img src="https://img.icons8.com/ios/256/search.png" alt="search" />
+          <BsSearch className="bottom_icon" />
           <p>cerca</p>
         </li>
         <li>
-          <img src="https://img.icons8.com/ios/256/bell.png" alt="notice" />
+          <BsBell className="bottom_icon" />
           <p>notifiche</p>
         </li>
         <li>
-          <img src="https://img.icons8.com/ios/256/new-message.png" alt="msg" />
+          <BiMessageDetail className="bottom_icon" />
           <p>messaggi</p>
         </li>
       </ul>
