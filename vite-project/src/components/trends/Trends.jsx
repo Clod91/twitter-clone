@@ -18,6 +18,16 @@ const Trends = () => {
       subTitle: "Ancora polimiche e accuse di Cassano",
       body: "Il barese nuovamente all'attacco ma nessuno riesce a capire cosa dice quindi non sappiamo il bersaglio delle accuse ne ,le accuse stesse",
     },
+    {
+      title: "La Terra è salva!",
+      subTitle: "Vittoria del terrestre Rick Sanchez",
+      body: "Vittoria di Rick e Morty nella gara interdimensionale di canto, come promesso la terra è ora salva,il nonno cantante è poi sparito con la Gioconda.",
+    },
+    {
+      title: "Crisi Energetica",
+      subTitle: "Possibile soluzione eco-friendly",
+      body: "Filtra ottimismo dall'università di Bari, i test del nuovo generatore di energia,alimentato dalle cazzate dei politici italiani,sembra promettere bene.",
+    },
   ];
 
   return (

@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+
 .trend_item {
   color: greenyellow;
+  background-color: rgb(80, 80, 80);
+  border-radius: 16px;
+  font-family: "Fuzzy Bubbles", cursive;
 }
+
 .trend_item p {
   color: white;
 }
