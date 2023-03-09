@@ -8,11 +8,11 @@ const MessageItem = ({ messageData }) => {
   const { userId, body } = messageData;
   const [userItem, setUserItem] = useState({});
 
-  useEffect(() => {
-    fetch(`https://dummyjson.com/users/${userId}`)
-      .then((res) => res.json())
-      .then((data) => setUserItem(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch(`https://dummyjson.com/users/${userId}`)
+  //     .then((res) => res.json())
+  //     .then((data) => setUserItem(data));
+  // }, []);
 
   return (
     <div className="message_item">

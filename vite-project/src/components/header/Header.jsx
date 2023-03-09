@@ -1,8 +1,8 @@
 import "./index.css";
 
-const Header = () => {
+const Header = ({ sliderTop }) => {
   return (
-    <div className="header">
+    <div className={`header ${sliderTop ? "hide" : ""}`}>
       <div className="header_small">
         <ul className="topIcons">
           <li>

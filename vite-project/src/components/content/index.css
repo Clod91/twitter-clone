@@ -1,11 +1,14 @@
 .content {
   width: 100%;
+  /* overflow-y: auto;
+  height: 100vh; */
 }
 
 .write {
   position: fixed;
   cursor: pointer;
-  right: 10;
+  right: 50px;
+  bottom: 270px;
   border-radius: 100%;
   background-color: greenyellow;
   width: 30px;
@@ -19,6 +22,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    height: auto;
   }
   .write {
     display: none;
