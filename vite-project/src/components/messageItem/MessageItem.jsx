@@ -4,16 +4,18 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import "./index.css";
 
-const MessageItem = ({ messageData }) => {
+const MessageItem = ({ messageData, setDisplayModal }) => {
   const { userId, body } = messageData;
   const [userItem, setUserItem] = useState({});
 
-  // useEffect(() => {
-  //   fetch(`https://dummyjson.com/users/${userId}`)
-  //     .then((res) => res.json())
-  //     .then((data) => setUserItem(data));
-  // }, []);
-
+  useEffect(() => {
+    fetch(`https://dummyjson.com/users/${userId}`)
+      .then((res) => res.json())
+      .then((data) => setUserItem(data));
+  }, []);
+  const onHandleClick = () => {
+    setDisplayModal((prev) => !prev);
+  };
   return (
     <div className="message_item">
       <img src={userItem.image} alt="user avatar" className="user_img" />
@@ -25,7 +27,7 @@ const MessageItem = ({ messageData }) => {
         <div className="msg_icons">
           <BiMessageRounded />
 
-          <BsArrowDownUp />
+          <BsArrowDownUp onClick={onHandleClick} />
           <AiOutlineHeart />
           <BsUpload />
         </div>

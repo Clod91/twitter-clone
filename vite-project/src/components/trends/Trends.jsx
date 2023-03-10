@@ -1,6 +1,5 @@
 import TrendItem from "../TrendItem";
 import "./index.css";
-import { useRef } from "react";
 
 const Trends = () => {
   const newTrends = [
@@ -30,17 +29,9 @@ const Trends = () => {
       body: "Filtra ottimismo dall'università di Bari, i test del nuovo generatore di energia,alimentato dalle cazzate dei politici italiani,sembra promettere bene.",
     },
   ];
-  const trendsRef = useRef(null);
+
   return (
-    <div
-      ref={trendsRef}
-      className="trends"
-      onScroll={() =>
-        trendsRef.current.scrollTop >= 1
-          ? (trendsRef.current.style.transform = "translateX(500px)")
-          : (trendsRef.current.style.transform = "translateX(0)")
-      }
-    >
+    <div className="trends">
       <h1>I nuovi Splash del momento</h1>
       {newTrends.map((item, index) => (
         <TrendItem item={item} key={index} />

@@ -5,8 +5,10 @@
   background-color: rgb(80, 80, 80);
   border-radius: 16px;
   font-family: "Fuzzy Bubbles", cursive;
+  padding: 10px;
 }
 
 .trend_item p {
   color: white;
+  padding: 10px;
 }

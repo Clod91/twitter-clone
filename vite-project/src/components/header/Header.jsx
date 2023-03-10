@@ -28,7 +28,7 @@ const Header = ({ sliderTop }) => {
         </ul>
       </div>
       <div className="header_up">
-        <p>Home</p>
+        <p>Benvenuto su Splasher</p>
         <img
           src="https://img.icons8.com/color/256/sparkling.png"
           alt="sparkling"
@@ -40,7 +40,7 @@ const Header = ({ sliderTop }) => {
           src="https://img.icons8.com/ios-glyphs/256/gender-neutral-user.png"
           alt="profile"
         />
-        <input type="text" placeholder="What's happening?" />
+        <input type="text" placeholder="Cerca gli splash" />
         <img src="https://img.icons8.com/fluency/256/image.png" alt="image" />
         <img src="https://img.icons8.com/arcade/256/gif.png" alt="gif" />
         <img

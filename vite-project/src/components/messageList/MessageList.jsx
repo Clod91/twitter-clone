@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import MessageItem from "../messageItem";
 import "./index.css";
 
-const MessageList = () => {
+const MessageList = ({ setDisplayModal }) => {
   const [messageList, setMessageList] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,11 @@ const MessageList = () => {
   return (
     <div className="messageList">
       {messageList.map((message) => (
-        <MessageItem messageData={message} key={message.id} />
+        <MessageItem
+          setDisplayModal={setDisplayModal}
+          messageData={message}
+          key={message.id}
+        />
       ))}
     </div>
   );
